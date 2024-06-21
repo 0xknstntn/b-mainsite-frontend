@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Header } from "./Header";
 import { MainBlock } from "./MainBlock";
 import { Block2 } from "./Block2";
+import { Block3 } from "./Block3";
 
 const Container = styled.div`
     width: 800px;
@@ -20,6 +21,7 @@ export const MainIndex = () => {
             <Header />
             <MainBlock />
             <Block2 />
+            <Block3 />
         </Container>
     )
 } 

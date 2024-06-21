@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BytecoinLogo from './assets/BytecoinLogo.png'
+import BytecoinLogo from './assets/MainLogo.svg'
 import TgBlack from './assets/TgBlack.png'
 import TgBlue from './assets/TgWhite.png'
 
@@ -24,8 +24,9 @@ const LogoBlock = styled.div`
 `
 
 const Logo = styled.img`
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
+    margin-top: 50px;
 `
 
 const WhiteText = styled.a`
@@ -112,10 +113,8 @@ const TgLogo = styled.img`
 export const MainBlock = () => {
     return (
         <Container>
-            <LogoBlock>
-                <Logo src={BytecoinLogo}/>
-            </LogoBlock>
-            <WhiteText>Welcome to Bytecoin</WhiteText>
+            <Logo src={BytecoinLogo} />
+            <WhiteText style={{marginTop: "50px"}}>Welcome to Bytecoin</WhiteText>
             <MainTextBlock>
                 <MainText>
                     <OrangeText>Bitcoin</OrangeText>, but <br />
@@ -129,11 +128,11 @@ export const MainBlock = () => {
             </WhiteText>
             <NavigateBlock>
                 <LinkTelegramButtonBlue>
-                    <TgLogo src={TgBlue} style={{marginBottom: "3px"}}/> 
+                    <TgLogo src={TgBlue} style={{ marginBottom: "3px" }} />
                     <TextInButtonBlue>Mini App</TextInButtonBlue>
                 </LinkTelegramButtonBlue>
                 <LinkTelegramButtonWhite>
-                    <TgLogo src={TgBlack} style={{width: "30px", height: "30px"}}/>
+                    <TgLogo src={TgBlack} style={{ width: "30px", height: "30px" }} />
                     <TextInButtonWhite>Channel</TextInButtonWhite>
                 </LinkTelegramButtonWhite>
             </NavigateBlock>

@@ -12,17 +12,6 @@ const Container = styled.div`
     text-align: center;
 `
 
-const LogoBlock = styled.div`
-    width: 270px;
-    height: 270px;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(90deg,#7bc1fd,#3199ff);
-    margin-top: 50px;
-`
-
 const Logo = styled.img`
     width: 280px;
     height: 280px;

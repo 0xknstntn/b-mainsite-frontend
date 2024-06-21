@@ -44,7 +44,7 @@ const WhiteText = styled.a`
 const Logo = styled.img`
     width: 500px;
     height: 500px;
-    margin: 30px auto;
+    margin: 60px auto;
 `
 
 

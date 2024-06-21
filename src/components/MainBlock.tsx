@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import BytecoinLogo from './assets/MainLogo.svg'
-import TgBlack from './assets/TgBlack.png'
-import TgBlue from './assets/TgWhite.png'
+import BytecoinLogo from './assets/MainLogo.webp'
+import TgBlack from './assets/TgBlack.webp'
+import TgBlue from './assets/TgWhite.webp'
 
 const Container = styled.div`
     width: 100%;
-    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,8 +105,8 @@ const TextInButtonWhite = styled.a`
 `
 
 const TgLogo = styled.img`
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 `
 
 
@@ -130,13 +129,13 @@ export const MainBlock = () => {
             <NavigateBlock>
                 <LinkTelegramButtonBlue>
                     <TextInButtonBlue href="https://t.me/bytecoindev_bot">
-                        <TgLogo src={TgBlue} style={{ marginBottom: "3px" }} />
+                        <TgLogo src={TgBlue} style={{ marginBottom: "1px", marginRight: "7px" }} />
                         Mini App
                     </TextInButtonBlue>
                 </LinkTelegramButtonBlue>
                 <LinkTelegramButtonWhite>
                     <TextInButtonWhite>
-                        <TgLogo src={TgBlack} style={{ width: "30px", height: "30px" }} />
+                        <TgLogo src={TgBlack} style={{ width: "24px", height: "24px", marginRight: "5px" }} />
                         Channel
                     </TextInButtonWhite>
                 </LinkTelegramButtonWhite>

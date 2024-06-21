@@ -5,7 +5,7 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 120px;
 `
 
 const Name = styled.a`

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BytecoinWhite from './assets/BytecoinWhite.png'
+import BytecoinWhite from './assets/BytecoinWhite.webp'
 
 const Container = styled.div`
     width: 100%;

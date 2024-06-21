@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import LogoBB from './assets/BBLogo.png'
+import LogoBB from './assets/BBLogo.webp'
 
 const Container = styled.div`
     width: 100%;

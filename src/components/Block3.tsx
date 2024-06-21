@@ -5,7 +5,6 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
 `
 
 const WhiteText = styled.a`
@@ -16,7 +15,7 @@ const WhiteText = styled.a`
 `
 
 const DescriptionContainer = styled.div`
-    width: 600px;
+    width: 550px;
     margin: auto;
     text-align: center;
     margin-top: 30px;
@@ -24,8 +23,8 @@ const DescriptionContainer = styled.div`
 
 const WhiteTextDescription = styled.a`
     color: #fff;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 19px;
+    font-weight: 500;
 `
 
 const Logo = styled.img`

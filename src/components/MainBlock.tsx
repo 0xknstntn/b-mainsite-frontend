@@ -59,7 +59,7 @@ const NavigateBlock = styled.div`
     justify-content: space-between;
 `
 
-const LinkTelegramButtonBlue = styled.button`
+const LinkTelegramButtonBlue = styled.div`
     width: 150px;
     height: 40px;
     background: #0792ff;
@@ -84,6 +84,12 @@ const TextInButtonBlue = styled.a`
     font-size: 17px;
     font-weight: 500;
     margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    padding-right: 25px;
+    text-decoration: none;
 `
 
 const TextInButtonWhite = styled.a`
@@ -91,6 +97,12 @@ const TextInButtonWhite = styled.a`
     font-size: 17px;
     font-weight: 500;
     margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    padding-right: 25px;
+    text-decoration: none;
 `
 
 const TgLogo = styled.img`
@@ -117,12 +129,16 @@ export const MainBlock = () => {
             </WhiteText>
             <NavigateBlock>
                 <LinkTelegramButtonBlue>
-                    <TgLogo src={TgBlue} style={{ marginBottom: "3px" }} />
-                    <TextInButtonBlue>Mini App</TextInButtonBlue>
+                    <TextInButtonBlue href="https://t.me/bytecoindev_bot">
+                        <TgLogo src={TgBlue} style={{ marginBottom: "3px" }} />
+                        Mini App
+                    </TextInButtonBlue>
                 </LinkTelegramButtonBlue>
                 <LinkTelegramButtonWhite>
-                    <TgLogo src={TgBlack} style={{ width: "30px", height: "30px" }} />
-                    <TextInButtonWhite>Channel</TextInButtonWhite>
+                    <TextInButtonWhite>
+                        <TgLogo src={TgBlack} style={{ width: "30px", height: "30px" }} />
+                        Channel
+                    </TextInButtonWhite>
                 </LinkTelegramButtonWhite>
             </NavigateBlock>
         </Container>

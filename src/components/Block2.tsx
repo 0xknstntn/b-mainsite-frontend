@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import Logoo from './assets/test.svg'
+import Scheme from './assets/Scheme.svg'
 
 const Container = styled.div`
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -45,7 +44,7 @@ const WhiteText = styled.a`
 const Logo = styled.img`
     width: 500px;
     height: 500px;
-    margin: 50px auto;
+    margin: 30px auto;
 `
 
 
@@ -67,7 +66,7 @@ export const Block2 = () => {
                     Farmers provide liquidity to miners through liquidity pool and getrewards from boosts.
                 </WhiteText>
             </WhiteTextContainer>
-            <Logo src={Logoo}/>
+            <Logo src={Scheme}/>
         </Container>
     )
 }

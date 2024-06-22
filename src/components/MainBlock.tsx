@@ -129,7 +129,7 @@ const TextInButtonBlue = styled.a`
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    padding-right: 25px;
+    padding-right: 31px;
     text-decoration: none;
     white-space: nowrap;
     @media (max-width: 360px) {
@@ -146,7 +146,7 @@ const TextInButtonWhite = styled.a`
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    padding-right: 25px;
+    padding-right: 31px;
     text-decoration: none;
     white-space: nowrap;
     @media (max-width: 360px) {

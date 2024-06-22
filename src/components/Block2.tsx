@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Scheme from './assets/Scheme.svg'
+import Scheme from './assets/Scheme.webp'
 
 const Container = styled.div`
     width: 100%;
@@ -57,12 +57,12 @@ const WhiteText = styled.a`
 `
 
 const Logo = styled.img`
-    width: 500px;
-    height: 500px;
+    width: 520px;
+    height: 450px;
     margin: 60px auto;
     @media (max-width: 700px) {
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 270px;
     }
 `
 

@@ -17,6 +17,9 @@ const Name = styled.a`
 const Logo = styled.img`
     width: 60px;
     height: 60px;
+    @media (max-width: 700px) {
+        margin-left: 25px;
+    }
 `
 
 

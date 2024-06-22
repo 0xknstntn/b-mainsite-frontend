@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Header } from "./Header";
 import { MainBlock } from "./MainBlock";
-import { Block2 } from "./Block2";
-import { Block3 } from "./Block3";
+import { Block2 } from "./Block2/Block2";
+import { Block3 } from "./Block3/Block3";
 
 const Container = styled.div`
     width: 800px;

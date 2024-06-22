@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import LogoBB from './assets/BBLogo.webp'
+import { useInView } from "react-intersection-observer";
+import { Block3Logo } from "./Logo";
 
 const Container = styled.div`
     width: 100%;
@@ -7,11 +8,14 @@ const Container = styled.div`
     flex-direction: column;
 `
 
-const WhiteText = styled.a`
+const WhiteText = styled.a <{ marginM: string, opacityM: string }>`
     color: #fff;
     font-size: 25px;
     font-weight: 600;
     text-align: center;
+    margin-top: ${(props: { marginM: any; }) => props.marginM};
+    opacity: ${(props: { opacityM: any; }) => props.opacityM};
+    transition: all .3s ease-in-out;
     @media (max-width: 700px) {
         font-size: 22px;
     }
@@ -38,22 +42,21 @@ const WhiteTextDescription = styled.a`
     }
 `
 
-const Logo = styled.img`
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    @media (max-width: 700px) {
-        width: 300px;
-        height: 300px;
-        margin-top: -40px;
-    }
-`
+
 
 
 export const Block3 = () => {
+
+    const { ref, inView } = useInView({
+        threshold: 0.3,
+        triggerOnce: true
+    });
+
     return (
         <Container>
-            <WhiteText>Following Bitcoin`s principles</WhiteText>
+            <WhiteText ref={ref}
+                marginM={inView == true ? '60px' : '80px'}
+                opacityM={inView == true ? '1' : '0'}>Following Bitcoin`s principles</WhiteText>
             <DescriptionContainer>
                 <WhiteTextDescription>
                     Bytecoin mirrors Bitcoin's economic model, but instead of
@@ -63,7 +66,7 @@ export const Block3 = () => {
                     while maintaining the core principles of Bitcoin economy.
                 </WhiteTextDescription>
             </DescriptionContainer>
-            <Logo src={LogoBB}/>
+            <Block3Logo />
         </Container>
     )
 }

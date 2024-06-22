@@ -12,6 +12,9 @@ const WhiteText = styled.a`
     font-size: 25px;
     font-weight: 600;
     text-align: center;
+    @media (max-width: 700px) {
+        font-size: 22px;
+    }
 `
 
 const DescriptionContainer = styled.div`
@@ -19,18 +22,31 @@ const DescriptionContainer = styled.div`
     margin: auto;
     text-align: center;
     margin-top: 30px;
+    @media (max-width: 700px) {
+        width: 90%;
+        margin-top: 20px;
+    }
 `
 
 const WhiteTextDescription = styled.a`
     color: #fff;
     font-size: 19px;
     font-weight: 500;
+    @media (max-width: 700px) {
+        font-size: 14px;
+        line-height: 1.3rem;
+    }
 `
 
 const Logo = styled.img`
     width: 400px;
     height: 400px;
     margin: auto;
+    @media (max-width: 700px) {
+        width: 300px;
+        height: 300px;
+        margin-top: -40px;
+    }
 `
 
 

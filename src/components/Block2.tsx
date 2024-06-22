@@ -6,6 +6,10 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 120px;
+    @media (max-width: 700px) {
+        width: 85%;
+        margin-top: 100px;
+    }
 `
 
 const Name = styled.a`
@@ -25,6 +29,9 @@ const GreyText = styled.a`
     color: #b5b5b5;
     font-size: 20px;
     font-weight: 600;
+    @media (max-width: 700px) {
+        font-size: 16px;
+    }
 `
 
 const WhiteTextContainer = styled.div`
@@ -33,18 +40,30 @@ const WhiteTextContainer = styled.div`
     flex-direction: column;
     gap: 5px;
     margin-top: 20px;
+    @media (max-width: 700px) {
+        width: 90%;
+    }
 `
 
 const WhiteText = styled.a`
     color: #fff;
     font-size: 20px;
     font-weight: 600;
+    line-height: 1.5rem;
+    @media (max-width: 700px) {
+        font-size: 16px;
+        line-height: 1.3rem;
+    }
 `
 
 const Logo = styled.img`
     width: 500px;
     height: 500px;
     margin: 60px auto;
+    @media (max-width: 700px) {
+        width: 300px;
+        height: 300px;
+    }
 `
 
 

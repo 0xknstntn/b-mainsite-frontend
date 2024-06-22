@@ -15,31 +15,58 @@ const Logo = styled.img`
     width: 280px;
     height: 280px;
     margin-top: 50px;
+    @media (max-width: 700px) {
+        width: 170px;
+        height: 170px;
+        margin-top: 20px;
+    }
 `
 
 const WhiteText = styled.a`
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+    margin-top: 50px;
+    @media (max-width: 700px) {
+        margin-top: 35px;
+    }
+`
+
+const WhiteTextDes = styled.a`
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
     margin-top: 30px;
+    @media (max-width: 700px) {
+        font-size: 13.5px;
+    }
 `
 
 const MainTextBlock = styled.div`
     width: 700px;
     margin-top: 30px;
     text-align: center;
+    @media (max-width: 700px) {
+        width: 90%;
+    }
 `
 
 const MainText = styled.a`
     color: #fff;
     font-size: 90px;
     font-weight: 600;
+    @media (max-width: 700px) {
+        font-size: 50px;
+    }
 `
 
 const OrangeText = styled.a`
     color: #f7931a;
     font-size: 90px;
     font-weight: 600;
+    @media (max-width: 700px) {
+        font-size: 50px;
+    }
 `
 
 const GradientText = styled.a`
@@ -48,6 +75,9 @@ const GradientText = styled.a`
     font-size: 90px;
     -webkit-background-clip: text;
     color: #0000;
+    @media (max-width: 700px) {
+        font-size: 50px;
+    }
 `
 
 const NavigateBlock = styled.div`
@@ -56,6 +86,12 @@ const NavigateBlock = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 700px) {
+        width: 85%;
+    }
+    @media (min-width: 450px) {
+        width: 350px;
+    }
 `
 
 const LinkTelegramButtonBlue = styled.div`
@@ -66,6 +102,9 @@ const LinkTelegramButtonBlue = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 360px) {
+        width: 130px;
+    }
 `
 
 const LinkTelegramButtonWhite = styled.button`
@@ -76,6 +115,9 @@ const LinkTelegramButtonWhite = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 360px) {
+        width: 130px;
+    }
 `
 
 const TextInButtonBlue = styled.a`
@@ -89,6 +131,10 @@ const TextInButtonBlue = styled.a`
     padding: 10px 20px;
     padding-right: 25px;
     text-decoration: none;
+    white-space: nowrap;
+    @media (max-width: 360px) {
+        padding: 10px 15px;
+    }
 `
 
 const TextInButtonWhite = styled.a`
@@ -102,6 +148,10 @@ const TextInButtonWhite = styled.a`
     padding: 10px 20px;
     padding-right: 25px;
     text-decoration: none;
+    white-space: nowrap;
+    @media (max-width: 360px) {
+        padding: 10px 15px;
+    }
 `
 
 const TgLogo = styled.img`
@@ -114,18 +164,18 @@ export const MainBlock = () => {
     return (
         <Container>
             <Logo src={BytecoinLogo} />
-            <WhiteText style={{marginTop: "50px"}}>Welcome to Bytecoin</WhiteText>
+            <WhiteText>Welcome to Bytecoin</WhiteText>
             <MainTextBlock>
                 <MainText>
                     <OrangeText>Bitcoin</OrangeText>, but <br />
                     <GradientText>TON</GradientText> version.
                 </MainText>
             </MainTextBlock>
-            <WhiteText>
+            <WhiteTextDes>
                 Bytecoin is a Jetton on TON Blockchain issues <br />
                 trough NFT mining. It fully copies Bitcoin economy <br />
                 trough mining, electricity and halbings.
-            </WhiteText>
+            </WhiteTextDes>
             <NavigateBlock>
                 <LinkTelegramButtonBlue>
                     <TextInButtonBlue href="https://t.me/bytecoindev_bot">

@@ -174,7 +174,7 @@ export const MainBlock = () => {
             <WhiteTextDes>
                 Bytecoin is a Jetton on TON Blockchain issues <br />
                 trough NFT mining. It fully copies Bitcoin economy <br />
-                trough mining, electricity and halbings.
+                trough mining, electricity and halvings.
             </WhiteTextDes>
             <NavigateBlock>
                 <LinkTelegramButtonBlue>
